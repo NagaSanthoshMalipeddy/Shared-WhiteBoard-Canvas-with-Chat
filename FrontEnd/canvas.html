@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="canvas.css">
+    </head>
+    <body>
+        <div class="left-container">
+            <div class="tool-box" id="tool-bar">
+                <div class="stroke">
+                    <label for="stroke" class="labelStroke">Stroke:</label>
+                    <input type="color" id="stroke" name="stroke" value="#000000">
+                </div>
+                <div class="line-width">
+                    <label for="line-width">Line Width:</label>
+                    <input type="number" id="line-width" name="line-width" value="1" min="1" max="100">
+                </div>
+                <div class="clear">
+                    <button id="clear">Clear</button>
+                </div>
+            </div>
+        </div>
+        <div class="middle-container">
+            <canvas id="drawing-board"></canvas>
+        </div>
+        <div class="right-container">
+            <div class="messages">
+                <div class="message-box" id="message-box">
+                    <div class="message room-chat" id="message room-chat">Room Chat</div>
+                </div>
+                <div class="input-box">
+                    <input type="text" id="inputMessage" placeholder="Type a message...">
+                    <button id="send">Send</button>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/@microsoft/signalr@7.0.5/dist/browser/signalr.js"></script>
+        <script src="canvas.js"></script>
+    </body>
+</html>
