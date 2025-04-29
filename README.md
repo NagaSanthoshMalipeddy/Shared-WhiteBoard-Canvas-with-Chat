@@ -1,5 +1,5 @@
-This project is to explain about How SignalR works, how we solve problem of fetching realtime application updates. This uses RPC( Remote Procedure Calls) which doesn't send any request to get updates but instead server will send updates to client if there's any update so that data is synchronous and data transfer is fast as RPC is 7 times daster than regular HTTP requests
+This project explains how SignalR works and how it helps solve the problem of fetching real-time application updates. It uses RPC (Remote Procedure Calls), which eliminates the need for clients to continuously send requests for updates. Instead, the server pushes updates to the client whenever there's new data. This ensures synchronized data and significantly faster data transfer, as RPC is approximately seven times faster than regular HTTP requests.
 
-This also overcomes the issue which we actually face when we use Long polling to get real time application updates
+SignalR also overcomes the limitations commonly encountered with long polling when implementing real-time updates.
 
-Canvas API, SignalR are used to develop this project
+This project was developed using the Canvas API and SignalR.
